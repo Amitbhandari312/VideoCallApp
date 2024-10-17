@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0f7fa;  /* Soft background color for the whole page */
+    font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;  /* Slightly more rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);  /* More pronounced shadow for depth */
+    transition: transform 0.3s ease;  /* Smooth scaling on hover */
+}
+
+.home-box:hover {
+    transform: translateY(-5px);  /* Lift effect on hover */
+}
+
+.home-box h1 {
+    margin-bottom: 30px;
+    font-size: 28px;  /* Slightly larger font size */
+    color: #333;
+    text-align: center;
+    font-weight: 600;  /* Bolder font weight */
+}
+
+.room-input {
+    width: 100%;
+    padding: 12px;  /* Increased padding for a larger touch area */
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;  /* Smooth transitions */
+}
+
+.room-input:focus {
+    border-color: #007bff;  /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Subtle glow effect */
+    outline: none;  /* Remove default outline */
+}
+
+.join-btn {
+    width: 60%;  /* Slightly wider button */
+    padding: 12px;  /* Increased padding for comfort */
+    text-transform: uppercase;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;  /* Slightly smaller font size */
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;  /* Button effects */
+    display: block;
+    margin: 20px auto 0;  /* Center the button and add space above */
+}
+
+.join-btn:hover {
+    background-color: #0069d9;  /* Darker blue on hover */
+    transform: translateY(-2px);  /* Slight lift effect on hover */
+}
+
+.join-btn:active {
+    transform: translateY(1px);  /* Pressed effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .home-box {
+        padding: 20px;  /* Reduce padding for smaller screens */
+        width: 90%;  /* Make the box width more responsive */
+    }
+
+    .join-btn {
+        width: 100%;  /* Make the button full width on smaller screens */
+        font-size: 16px;  /* Adjust font size */
+    }
+
+    .home-box h1 {
+        font-size: 24px;  /* Adjust heading size for smaller screens */
+    }
+}
